@@ -20,6 +20,10 @@
   visibility: hidden;
   }
 
+.notice {
+  display:none; 
+}
+
 @media only screen and (max-width:799px) {
   .footer {
     display:none;
@@ -29,12 +33,4 @@
   }
   .desktop {
     display:none;
-  }
-
-@media only screen and (min-width:800px) {
-  .footer {
-    display:none;
-  }
-  .notice {
-    display: none;
   }
