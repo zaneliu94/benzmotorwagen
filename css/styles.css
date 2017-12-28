@@ -1,0 +1,26 @@
+.return 
+  a {
+    text-decoration:none; color:hsla(0, 0%, 0%, 0.38);
+  }
+  a:link {
+    text-decoration:none; color:hsla(0, 0%, 0%, 0.38);
+  }
+  a:visited {
+    text-decoration:none; color:hsla(0, 0%, 0%, 0.38);
+  }
+  a:hover {
+    text-decoration:none; color:rgba(51,51,51,1)
+  }
+
+.logo {
+  background:url(http://i292.photobucket.com/albums/mm7/zaneroks94/Untitled202_1.png); width: 24.5px; height: 24.5px;     
+  background-repeat: no-repeat;
+  }
+.logo:hover img {
+  visibility: hidden;
+  }
+
+@media only screen and (max-width:768px) {
+  .footer {
+    display:none;
+  }
