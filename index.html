@@ -66,50 +66,48 @@
     <!-- JS Scripts -->
     <script type="text/javascript" src="./src/js/threesixty.min.js"></script>
     <script type="text/javascript">
+    if (window.matchMedia("screen and (max-width:900px)").matches) {
       window.onload = init;
       var benz;
-      if (window.matchMedia("(max-width:900px)").matches) {
-	      function init(){
-
-
-	        benz = $('.benz').ThreeSixty({
-	          totalFrames: 60, // Total no. of image you have for 360 slider
-	          endFrame: 12, // end frame for the auto spin animation
-	          currentFrame: 59, // This the start frame for auto spin
-	          imgList: '.threesixty_images', // selector for image list
-	          progress: '.spinner', // selector to show the loading progress
-	          imagePath:'benz4/', // path of the image assets
-	          filePrefix: '', // file prefix if any
-	          ext: '.png', // extention for the assets
-	          height: 994,
-	          width: 1500,
-	          navigation: false,
-	          disableSpin: false,
-	          responsive: true
-	        });
-      	  }
-		}
-      else {
-	     function init(){
-
-
-	        benz = $('.benz').ThreeSixty({
-	          totalFrames: 360, // Total no. of image you have for 360 slider
-	          endFrame: 74, // end frame for the auto spin animation
-	          currentFrame: 352, // This the start frame for auto spin
-	          imgList: '.threesixty_images', // selector for image list
-	          progress: '.spinner', // selector to show the loading progress
-	          imagePath:'benz3/', // path of the image assets
-	          filePrefix: '', // file prefix if any
-	          ext: '.png', // extention for the assets
-	          height: 994,
-	          width: 1500,
-	          navigation: false,
-	          disableSpin: false,
-	          responsive: true
-	        });
-      	  }
-      }
+	  function init(){
+	    benz = $('.benz').ThreeSixty({
+	      totalFrames: 60, // Total no. of image you have for 360 slider
+	      endFrame: 12, // end frame for the auto spin animation
+	      currentFrame: 59, // This the start frame for auto spin
+	      imgList: '.threesixty_images', // selector for image list
+	      progress: '.spinner', // selector to show the loading progress
+	      imagePath:'benz4/', // path of the image assets
+	      filePrefix: '', // file prefix if any
+	      ext: '.png', // extention for the assets
+	      height: 994,
+	      width: 1500,
+	      navigation: false,
+	      disableSpin: false,
+	      responsive: true
+	    });
+	  }	
+	}
+    else {
+	  window.onload = init;
+      var benz;  
+	  function init(){
+        benz = $('.benz').ThreeSixty({
+	      totalFrames: 60, // Total no. of image you have for 360 slider
+	      endFrame: 12, // end frame for the auto spin animation
+	      currentFrame: 59, // This the start frame for auto spin
+	      imgList: '.threesixty_images', // selector for image list
+	      progress: '.spinner', // selector to show the loading progress
+	      imagePath:'benz4/', // path of the image assets
+	      filePrefix: '', // file prefix if any
+	      ext: '.png', // extention for the assets
+	      height: 994,
+	      width: 1500,
+	      navigation: false,
+	      disableSpin: false,
+	      responsive: true
+        });
+  	  }
+  }
     </script>
     <!-- /build -->
     <!--/ End JS Scripts -->
