@@ -19,7 +19,9 @@
 .logo:hover img {
   visibility: hidden;
   }
-
+.touch {
+  display:none;
+}
 .notice {
   display:none; 
 }
@@ -34,3 +36,12 @@
   .desktop {
     display:none;
   }
+
+@media only screen and (min-width: 820px) {
+  .computer {
+    display:none;
+  }
+  .touch {
+    display:block;
+  }
+}
