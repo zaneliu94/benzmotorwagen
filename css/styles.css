@@ -19,17 +19,8 @@
 .logo:hover img {
   visibility: hidden;
   }
-.notice {
-  display:none; 
-}
 
 @media only screen and (max-width:799px) {
   .footer {
-    display:none;
-  }
-  .notice {
-    display: block;
-  }
-  .desktop {
     display:none;
   }
