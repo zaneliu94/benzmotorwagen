@@ -15,7 +15,7 @@
     <link rel="mask-icon" href="./resources/zl-vector.svg" color="#181717">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
   </head>
-  <body style="background-color:#FAFAFA;">
+  <body style="background-color:#FFF;">
 	<div>
 		<div style="float: left; padding-left: 9.5%; padding-top: 4.9%; font-size:1.1em; font-family: 'Open Sans', sans-serif; font-weight: 300; letter-spacing: .02em;">
 			<a class="return" href="https://www.zaneliu.com/benzmotorwagen" style="text-decoration:none"><span style="font-weight:600; padding-right: 11px; letter-spacing: .02em;">✕</span>Return</a>
@@ -28,7 +28,7 @@
 	</div>
 
     <div class="threesixty benz">
-        <div class="spinner" style="background-color:#FAFAFA">
+        <div class="spinner" style="background-color:#FFF">
           <span style="color:#181717; font-size:24px; font-family: 'Open Sans', sans-serif; font-weight: 600; letter-spacing: .02em;">0%</span>
         </div>
         <a href="javascript:;" ontouchstart="document.getElementById('instructions').style.display='none';" onmousedown="document.getElementById('instructions').style.display='none';"><ol class="threesixty_images"></ol></a>
@@ -70,7 +70,6 @@
     <script type="text/javascript">
     window.onload = init;
     var benz;
-    if (window.matchMedia("screen and (max-width:900px)").matches) {
 	  function init(){
         benz = $('.benz').ThreeSixty({
           totalFrames: 360, // Total no. of image you have for 360 slider
@@ -80,7 +79,7 @@
           progress: '.spinner', // selector to show the loading progress
           imagePath:'benz3/', // path of the image assets
           filePrefix: '', // file prefix if any
-          ext: '.png', // extention for the assets
+          ext: '.jpg', // extention for the assets
           height: 994,
           width: 1500,
           navigation: false,
@@ -88,28 +87,6 @@
           responsive: true
         });
   	  }
-    }
-    else {
-    window.onload = init;
-    var benz;  
-    function init(){
-        benz = $('.benz').ThreeSixty({
-          totalFrames: 360, // Total no. of image you have for 360 slider
-          endFrame: 74, // end frame for the auto spin animation
-          currentFrame: 352, // This the start frame for auto spin
-          imgList: '.threesixty_images', // selector for image list
-          progress: '.spinner', // selector to show the loading progress
-          imagePath:'benz3/', // path of the image assets
-          filePrefix: '', // file prefix if any
-          ext: '.png', // extention for the assets
-          height: 994,
-          width: 1500,
-          navigation: false,
-          disableSpin: false,
-          responsive: true
-        });
-      }
-    }
     </script>
     <!-- /build -->
     <!--/ End JS Scripts -->
